@@ -1,11 +1,16 @@
 {
-    "applinks": {
-        "details": [{
-            "appID": "HC3NQ49D3T.com.alihan.LeaderID",
-            "components": [{
-                "/": "/leaderid/*",
-                "comment": "Matches any URL whose path starts with /leaderid/"
-            }]
-        }]
-    }
+  "applinks": {
+      "details": [
+           {
+             "appIDs": [ "HC3NQ49D3T.com.alihan.LeaderID"],
+             "components": [
+               {
+                  "/": "/leaderid/*",
+                  "?": { "code": "*" },
+                  "comment": "Matches any URL with a path that starts with /help/ and that has a query item with name 'articleNumber' and a value of exactly four characters."
+               }
+             ]
+           }
+       ]
+   }
 }
